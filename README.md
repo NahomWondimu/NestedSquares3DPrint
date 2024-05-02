@@ -7,16 +7,17 @@ The nested square model is a 3D printing project that creates a cube-like struct
 $$\ L_x = \sqrt{2} \left( \frac{L_{x-1}}{2} \right) \$$
 
 where:
-- \(L_x\) is the length of the side of the square hole in layer \(x\),
-- \(L_{x-1}\) is the length of the side of the square hole in the layer above layer \(x\).
+- $\(L_x\)$ is the length of the side of the square hole in layer $\(x\)$,
+- $\(L_{x-1}\)$ is the length of the side of the square hole in the layer above layer $\(x\)$.
+- $\(L_{0}\)$ is the length of the side of the square hole at the top layer.
 
 ## Design Process
 
-1. **Formulas Creation**: The first step was to create the formulas that represent the relationship between all the square shapes. The formula \(L_x = \sqrt{2} \left( \frac{L_{x-1}}{2} \right)\) was used to calculate the side length of each square based on the previous layer's square side length.
+1. **Formulas Creation**: The first step was to create the formulas that represent the relationship between all the square shapes. The formula $\(L_x = \sqrt{2} \left( \frac{L_{x-1}}{2} \right)\)$ was used to calculate the side length of each square based on the previous layer's square side length.
 
 2. **Area Summation**: Next, a summation was created to represent the total area of all the square holes in the cube. The summation formula is:
 
-\[ \sum_{n=0}^{\infty} 1 \left( 0.5 \right)^n \]
+$$\ \sum_{n=0}^{\infty} 1 \left( 0.5 \right)^n \$$
 
 Each term of the summation represents the area of each layer of the square hole, showing how the area decreases with each layer until it approaches 0 or reaches the bottom layer of the cube.
 
