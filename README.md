@@ -4,7 +4,7 @@
 
 The nested square model is a 3D printing project that creates a cube-like structure with square holes in each layer. Each layer has a square hole that is 1/2 the area of the square hole in the layer above it. The length of each square's sides is calculated using the formula:
 
-$$\[ L_x = \sqrt{2} \left( \frac{L_{x-1}}{2} \right) \]$$
+$$\ L_x = \sqrt{2} \left( \frac{L_{x-1}}{2} \right) \$$
 
 where:
 - \(L_x\) is the length of the side of the square hole in layer \(x\),
